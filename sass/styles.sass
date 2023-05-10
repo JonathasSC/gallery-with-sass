@@ -1,0 +1,137 @@
+@use 'vars'
+@use 'mixins'
+
+body 
+	a
+		text-decoration: none
+		transition: .4s
+		color: vars.$color-black
+	
+* 
+	font-family: Inter
+	box-sizing: border-box
+
+.header
+	display: flex
+	justify-content: space-between
+	@include mixins.container
+
+	@include mixins.mobile
+		padding: 1.1rem
+
+	&__brand 
+		font-size: 2rem
+		font-weight: bold
+
+	&__navbar
+		ul 
+			height: 100%
+			@include mixins.flex-center
+
+			@include mixins.mobile
+				display: none
+
+			li 
+				text-transform: uppercase
+				font-size: .8rem
+				margin: 0 1rem
+
+				.active
+					color: vars.$color-active
+					font-weight: bold
+					
+					&:hover 
+						color: vars.$color-active
+
+				a
+					&:hover 
+						color: vars.$color-hover
+
+					
+	&__social
+
+		ul
+			height: 100%			
+			@include mixins.flex-center
+
+			@include mixins.mobile
+				display: none
+
+			li
+				margin: 0 1rem
+
+				a
+					&:hover 
+						color: vars.$color-hover
+
+
+.gallery
+	@include mixins.flex-center
+	@include mixins.container
+	flex-wrap: wrap
+	justify-content: space-between
+	padding: 0
+	@include mixins.mobile
+		flex-direction: column
+
+	&__card
+		@include mixins.flex-center
+		@include mixins.mobile
+			width: 90%
+			margin-bottom: 6%
+
+		flex-direction: column
+
+		color: vars.$color-white
+
+		width: 31%
+		height: 400px
+		margin-bottom: 4%
+
+		border-radius: 1rem
+
+		filter: grayscale(1)
+
+		&:hover 
+			filter: grayscale(0)
+
+		&__title 
+			font-size: 1.5rem
+			font-weight: bold
+			margin-bottom: 1rem
+			text-shadow: 0px 0px 13px rgba(0,0,0,0.53)
+
+		&__btn
+			padding: .6rem 2rem
+			color: vars.$color-white
+			background-color: vars.$color-active
+
+			font-weight: 400
+			text-transform: uppercase
+			letter-spacing: 1px
+			border-radius: 5px
+
+			box-shadow: 0px 10px 30px 0px rgba(15,166,253,0.69)
+
+			&:hover
+				background-color: vars.$color-active
+				color: vars.$color-white
+
+	#card-1
+		@include mixins.bg-image('animais.jpg')
+	#card-2
+		@include mixins.bg-image('arquitetura.jpg')
+	#card-3
+		@include mixins.bg-image('cidade.jpg')
+	#card-4
+		@include mixins.bg-image('decoracao.jpg')
+	#card-5
+		@include mixins.bg-image('esportes.jpg')
+	#card-6
+		@include mixins.bg-image('natureza.jpg')
+	#card-7
+		@include mixins.bg-image('paisagem.jpg')
+	#card-8
+		@include mixins.bg-image('pessoas.jpg')
+	#card-9
+		@include mixins.bg-image('refeicoes.jpg')

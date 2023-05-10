@@ -1,0 +1,229 @@
+body a {
+  text-decoration: none;
+  transition: 0.4s;
+  color: #272727;
+}
+
+* {
+  font-family: Inter;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+@media (max-width: 725px) {
+  .header {
+    padding: 1.1rem;
+  }
+}
+.header__brand {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.header__navbar ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 725px) {
+  .header__navbar ul {
+    display: none;
+  }
+}
+.header__navbar ul li {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin: 0 1rem;
+}
+.header__navbar ul li .active {
+  color: #0fa6fd;
+  font-weight: bold;
+}
+.header__navbar ul li .active:hover {
+  color: #0fa6fd;
+}
+.header__navbar ul li a:hover {
+  color: #0fa6fd;
+}
+.header__social ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 725px) {
+  .header__social ul {
+    display: none;
+  }
+}
+.header__social ul li {
+  margin: 0 1rem;
+}
+.header__social ul li a:hover {
+  color: #0fa6fd;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+@media (max-width: 725px) {
+  .gallery {
+    flex-direction: column;
+  }
+}
+.gallery__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #f7fcff;
+  width: 31%;
+  height: 400px;
+  margin-bottom: 4%;
+  border-radius: 1rem;
+  filter: grayscale(1);
+}
+@media (max-width: 725px) {
+  .gallery__card {
+    width: 90%;
+    margin-bottom: 6%;
+  }
+}
+.gallery__card:hover {
+  filter: grayscale(0);
+}
+.gallery__card__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 0px 0px 13px rgba(0, 0, 0, 0.53);
+}
+.gallery__card__btn {
+  padding: 0.6rem 2rem;
+  color: #f7fcff;
+  background-color: #0fa6fd;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 30px 0px rgba(15, 166, 253, 0.69);
+}
+.gallery__card__btn:hover {
+  background-color: #0fa6fd;
+  color: #f7fcff;
+}
+.gallery #card-1 {
+  background-image: url("../img/animais.jpg");
+  background-position: center;
+  background-size: 100%;
+  filter: grayscale(1);
+  transition: 1s;
+}
+.gallery #card-1:hover {
+  filter: grayscale(0);
+  background-size: 110%;
+}
+.gallery #card-2 {
+  background-image: url("../img/arquitetura.jpg");
+  background-position: center;
+  background-size: 100%;
+  filter: grayscale(1);
+  transition: 1s;
+}
+.gallery #card-2:hover {
+  filter: grayscale(0);
+  background-size: 110%;
+}
+.gallery #card-3 {
+  background-image: url("../img/cidade.jpg");
+  background-position: center;
+  background-size: 100%;
+  filter: grayscale(1);
+  transition: 1s;
+}
+.gallery #card-3:hover {
+  filter: grayscale(0);
+  background-size: 110%;
+}
+.gallery #card-4 {
+  background-image: url("../img/decoracao.jpg");
+  background-position: center;
+  background-size: 100%;
+  filter: grayscale(1);
+  transition: 1s;
+}
+.gallery #card-4:hover {
+  filter: grayscale(0);
+  background-size: 110%;
+}
+.gallery #card-5 {
+  background-image: url("../img/esportes.jpg");
+  background-position: center;
+  background-size: 100%;
+  filter: grayscale(1);
+  transition: 1s;
+}
+.gallery #card-5:hover {
+  filter: grayscale(0);
+  background-size: 110%;
+}
+.gallery #card-6 {
+  background-image: url("../img/natureza.jpg");
+  background-position: center;
+  background-size: 100%;
+  filter: grayscale(1);
+  transition: 1s;
+}
+.gallery #card-6:hover {
+  filter: grayscale(0);
+  background-size: 110%;
+}
+.gallery #card-7 {
+  background-image: url("../img/paisagem.jpg");
+  background-position: center;
+  background-size: 100%;
+  filter: grayscale(1);
+  transition: 1s;
+}
+.gallery #card-7:hover {
+  filter: grayscale(0);
+  background-size: 110%;
+}
+.gallery #card-8 {
+  background-image: url("../img/pessoas.jpg");
+  background-position: center;
+  background-size: 100%;
+  filter: grayscale(1);
+  transition: 1s;
+}
+.gallery #card-8:hover {
+  filter: grayscale(0);
+  background-size: 110%;
+}
+.gallery #card-9 {
+  background-image: url("../img/refeicoes.jpg");
+  background-position: center;
+  background-size: 100%;
+  filter: grayscale(1);
+  transition: 1s;
+}
+.gallery #card-9:hover {
+  filter: grayscale(0);
+  background-size: 110%;
+}
+
+/*# sourceMappingURL=styles.css.map */
